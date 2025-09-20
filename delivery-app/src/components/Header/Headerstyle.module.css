@@ -17,7 +17,7 @@
     gap:10px;
     align-items: center;
 }
-p{
+.text{
     font-size: 2.5vw;
 }
 .right ul{
@@ -64,4 +64,50 @@ p{
 .logo {
   fill: rgb(227,118,0);  /* sets the SVG color */
 }
+.menuIcon {
+  display: none; /* default: hidden */
+  cursor: pointer;
+  font-size: 2rem; /* adjust size if needed */
+  color: rgb(227,118,0);
+}
 
+@media (max-width: 768px) {
+  .burger {
+    display: block; /* show burger */
+  }
+  .menuIcon{
+    display:block;
+  }
+
+  .right {
+    display: none; /* hide list */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgb(61,32,12);
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+  }
+  .right ul li:first-child{
+    border: none;  
+    left: 0;
+  }
+  .cart{
+    width:100%;
+    border-top: 1px solid rgb(249,170,0);
+    padding-top: 35px;
+    padding-left: 250px;
+    
+  }
+
+  .right.showMenu {
+    display: block; /* show when burger clicked */
+  }
+
+  .right ul {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+}
