@@ -11,7 +11,6 @@ function Footer() {
     <div className={styles.outerSection}>
         <div className={styles.container}>
             <div className={styles.lists}>
-                <div className={styles.media}>
                 <div className={styles.left}>
                     <h1>Foodie-Corner</h1>
                     <p className={styles.des}>Where culinary artistry meets doorstep convenience.
@@ -31,7 +30,7 @@ function Footer() {
                     </ul>
 
                 </div>
-                </div>
+              
                 <div className={styles.right}>
                     <h2>Social Connect</h2>
                     <ul>
