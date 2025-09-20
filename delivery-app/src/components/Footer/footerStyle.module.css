@@ -5,7 +5,7 @@
 .container{
     width:92%;
     margin: 0 auto;
-    padding-top: 60px;
+    padding-top: 40px;
 }
 .lists{
     display:flex;
@@ -20,6 +20,7 @@ h1{
     font-size: 50px;
 }
 h2{
+    padding-bottom: 20px;
     color:rgb(255, 210, 48)
 }
 .des{
@@ -36,12 +37,72 @@ h2{
 }
 input{
     width: 100%;
-    padding:15px 20px;
-    border:1px solid rgb(255, 210, 48);
+    font-size: 15px;
+    padding:13px 20px;
+    border:px solid rgb(255, 210, 48);
     border-radius:10px;
     background-color: rgb(63,44,39);
+
 }
 
+.middle ul li{
+    padding-bottom: 12px;
+    color: rgb(232,210,123);
+}
+.middle ul li a:hover{
+    color: rgb(255, 210, 48);
+    padding-left: 10px;
+}
+.right ul{
+    color: rgb(232,210,123);
+    list-style-type: none;
+    display: flex;
+    gap: 18px;
+}
+.right ul li{
+    border: 1px solid black;
+    border: none;
+    background-color: rgb(85,63,22);
+    padding: 8px;
+    border-radius: 50px;
+}
+.right ul li:hover {
+  transform: scale(1.3);    /* zoom in */
+  color: rgb(114, 83, 25);    /* change color on hover */
+  cursor: pointer;
+}
+.face{
+    color:rgb(59,89,152);
+}
+.X{
+    color:black;
+}
+.inst{
+    color: rgb(225,48,109);
+}
+.u{
+    color: red;
+}
 .buttom{
-    padding-top: 120px;
+    padding-top: 70px;
+}
+hr{
+    color: rgb(232,210,123);
+    
+}
+.btext{
+    color:rgb(255, 210, 48);
+    padding-top: 20px;
+    text-align: center;
+}
+@media(max-width:7680x){
+    .left{
+        display: inline-block;
+    }
+    .middle{
+        display: inline-block;
+    }
+    .right{
+        display: block;
+    }
 }
